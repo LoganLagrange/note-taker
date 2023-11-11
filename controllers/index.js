@@ -7,6 +7,4 @@ router.use(notesRoutes)
 const htmlRoutes = require("./htmlController")
 router.use(htmlRoutes)
 
-
-
 module.exports = router;

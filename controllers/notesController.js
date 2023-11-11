@@ -22,4 +22,13 @@ router.post(`/api/notes`,(req,res) => {
     res.json(newNote);
 })
 
+router.delete(`/api/notes/:id`, (req,res) => {
+    const storedNotesData = JSON.parse(fs.readFileSync("./db/db.json"));
+    const targetNote = storedNotesData.find(obj => obj.id === req.params.id);
+    storedNotesData.splice(targetNote, 1);
+    fs.writeFileSync("./db/db.json",JSON.stringify(storedNotesData,null,4));
+    console.log(`${req.method} request to ${req.url}`);
+    res.json(targetNote);
+});
+
 module.exports = router;
