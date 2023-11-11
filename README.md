@@ -25,6 +25,8 @@ N/A
         
 The app is used by clicking the button on the landing page, at which point you will be taken to the note page, this will allow you to enter a title and text for your note which will be saved to the database when you click the save button, a new note can be created at any time by clicking the plus button, and old notes can be deleted by clicking the red delete button on the associated note, you can navigate through the exsisting notes by clicking on them on the sidebar. See attached walkthrough video for a demonstration.
 
+![Walkthrough video](https://drive.google.com/file/d/1ubT6gLaECQC5UNF8tUB1iTpgHPqHvlWD/view)
+
 ## Contribution Guidelines
 
 N/A
